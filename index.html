@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="/portfolio/img/common/favicon/favicon.ico"
+    />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/webfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <!-- <link href="css/main.css" rel="stylesheet" /> -->
+    <!-- script -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header"></header>
+      <main id="container">
+        <!-- <div class="cinner">
+          <section class="main-visual">
+            <div class="main-visual-title">
+              <h3>portfolio.</h3>
+              <p>[JUNG HEE JUNG]</p>
+            </div>
+            <div class="main-visual-bot">
+              <p>해당 사이트는 개인 포트폴리오 용도로 제작되어 상업적 목적이 없음을 밝힙니다.</p>
+              <p class="ce">Welcome to my page!</p>
+              <p class="arrow"><span class="blind">화살표 아이콘</span></p>
+            </div>
+            <a class="view-btn" href="/portfolio/page/work.html">View<span class="br">Works</span></a>
+          </section>
+        </div> -->
+      </main>
+      <!-- <footer id="footer"></footer> -->
+    </div>
+    <!-- .wrap -->
+    <script>
+      $(document).ready(function () {
+        $("#header").load("/portfolio/page/header.html", function () {
+          document.getElementsByClassName("header-inner");
+        });
+        $("#container").load("/portfolio/page/work.html", function () {
+          document.getElementsByClassName("cnavi");
+        });
+        // $("#footer").load("/portfolio/page/footer.html", function () {
+        //     document.getElementsByClassName("footer-cont");
+        // });
+      });
+    </script>
+  </body>
+</html>

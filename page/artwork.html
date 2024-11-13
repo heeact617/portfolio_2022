@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+   <link rel="shortcut icon" href="/portfolio/img/common/favicon/favicon.ico" />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
+    <link href="../css/page.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+      integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- script -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+      integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header"></div>
+      <main id="container" class="off-bg">
+        <div class="cnavi">
+          <div class="cinner">
+            <h3 class="page-title">ARTWORK</h3>
+          </div>
+        </div>
+        <div class="page-contents">
+          <div class="cinner">
+            <section class="artwork">
+              <h4 class="sc-title"><span>DESIGN-BANNER</span></h4>
+              <div class="sc-cont sc-banner">
+                <div class="list-cont">
+                  <a href="../img/page/banner-1.jpg" data-lightbox="bnr"></a>
+                  <a href="../img/page/banner-2.jpg" data-lightbox="bnr"></a>
+                  <a href="../img/page/banner-3.jpg" data-lightbox="bnr"></a>
+                  <a href="../img/page/banner-4.jpg" data-lightbox="bnr"></a>
+                  <a href="../img/page/banner-5.jpg" data-lightbox="bnr"></a>
+                  <a href="../img/page/banner-6.jpg" data-lightbox="bnr"></a>
+                  <a href="../img/page/banner-7.jpg" data-lightbox="bnr"></a>
+                  <a href="../img/page/banner-8.jpg" data-lightbox="bnr"></a>
+                  <a></a>
+                </div>
+              </div>
+            </section>
+            <section class="artwork">
+              <h4 class="sc-title"><span>DESIGN-WEB CONTENTS</span></h4>
+              <div class="sc-cont sc-webcon">
+                <div class="list-cont">
+                  <a href="../img/page/webcon-1.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-2.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-3.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-4.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-5.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-6.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-7.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-8.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-9.jpg" data-lightbox="webcon"></a>
+                  <a href="../img/page/webcon-10.jpg" data-lightbox="webcon"></a>
+                  <a></a>
+                  <a></a>
+                </div>
+              </div>
+            </section>
+            <section class="artwork">
+              <h4 class="sc-title"><span>DESIGN-ARTWORK</span></h4>
+              <div class="sc-cont sc-artwork">
+                <div class="list-cont">
+                  <a href="../img/page/artwork-1.jpg" data-lightbox="artwork"></a>
+                  <a href="../img/page/artwork-2.jpg" data-lightbox="artwork"></a>
+                  <a href="../img/page/artwork-3.jpg" data-lightbox="artwork"></a>
+                  <a href="../img/page/artwork-4.jpg" data-lightbox="artwork"></a>
+                  <a href="../img/page/artwork-5.jpg" data-lightbox="artwork"></a>
+                  <a></a>
+                  <a></a>
+                  <a></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+    <!-- .wrap -->
+  </body>
+  <script>
+    $(document).ready(function () {
+        $("#header").load("/portfolio/page/header.html", function () {
+            document.getElementsByClassName("header-inner");
+        });         
+        $("#footer").load("/portfolio/page/footer.html", function () {
+              document.getElementsByClassName("footer-cont");
+          });
+    });
+  </script>
+  </body>
+</html>
